@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Madam'S Boutique</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="logo navbar-brand" href="home.html"
+            >Madam's <span>Boutique</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active me-5 text-uppercase fw-bolder text-dark"
+                  aria-current="page"
+                  href="home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active me-5 text-uppercase fw-bolder text-dark"
+                  href="collection.html"
+                  >Collection</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active me-5 text-uppercase fw-bolder text-dark"
+                  href="gallery.html"
+                  >Gallery</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active me-5 text-uppercase fw-bolder text-dark"
+                  href="compare.html"
+                  >Brand Compare</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active me-5 text-uppercase fw-bolder text-dark"
+                  href="about.html"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active me-5 text-uppercase fw-bolder text-dark"
+                  href="contact.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container-contact" style="padding-top: 80px">
+      <h1>Contact Us</h1>
+      <p class="tagline">Visit our store or drop us a message</p>
+
+      <div class="box">
+        <!-- LEFT: Store Details + Form -->
+        <div class="left-side">
+          <h2>Store Details</h2>
+
+          <div class="detail">
+            <div class="label">Address</div>
+            <div class="value">
+              Tariq Rd, beside Dolmen Mall, Delhi Society Delhi CHS
+              P.E.C.H.S.,<br />
+              Karachi, 75400, Pakistan
+            </div>
+          </div>
+
+          <div class="detail">
+            <div class="label">Phone</div>
+            <div class="value">
+              <a href="tel:03452636396">03452636396</a>
+            </div>
+          </div>
+
+          <div class="detail">
+            <div class="label">Email</div>
+            <div class="value">
+              <a href="mailto:hello@madamaboutique.pk"
+                >hello@madamaboutique.pk</a
+              >
+            </div>
+          </div>
+
+          <hr class="line" />
+
+          <div class="detail">
+            <div class="label">Store Hours</div>
+            <table class="hours-table">
+              <tr>
+                <td>Monday - Saturday</td>
+                <td>10:30 AM - 8:30 PM</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>11:00 AM - 6:00 PM</td>
+              </tr>
+            </table>
+          </div>
+
+          <hr class="line" />
+
+          <div class="detail">
+            <div class="label">Follow Us</div>
+            <div class="social">
+              <a
+                href="https://www.instagram.com/sanamboutiqueofficial/"
+                target="_blank"
+                >Instagram</a
+              >
+              <a
+                href="https://www.facebook.com/SanambyUmairAsim/"
+                target="_blank"
+                >Facebook</a
+              >
+              <a href="https://www.tiktok.com/@sanamboutiquee" target="_blank"
+                >Tiktok</a
+              >
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <h3>Send a Message</h3>
+            <form action="#" method="post">
+              <div class="input-group">
+                <input
+                  class="x"
+                  type="text"
+                  name="firstName"
+                  placeholder="First Name"
+                  required
+                />
+                <input
+                  class="e"
+                  type="text"
+                  name="lastName"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
+              <input
+                class="y"
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                required
+              />
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="Your message"
+                required
+              ></textarea>
+              <button type="submit" onclick="validate()">Send Message</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- RIGHT: Map -->
+        <div class="map-side">
+          <h2>Our Location</h2>
+          <div id="map"></div>
+        </div>
+        <script>
+          navigator.geolocation.getCurrentPosition((position) => {
+            let { latitude, longitude } = position.coords;
+            var map = L.map("map").setView([24.8774421, 67.0634124], 15);
+            L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+              maxZoom: 19,
+              minZoom: 1,
+              attribution:
+                '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+            }).addTo(map);
+            L.marker([24.8774421, 67.0634124]).addTo(map);
+          });
+        </script>
+      </div>
+    </div>
+
+    <footer>
+      <div class="links">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="compare.html">Compare</a>
+        <a href="collection.html">Collection</a>
+        <a href="gallery.html">Gallery</a>
+      </div>
+      <p>© 2025 Madam Boutique's.</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="first.js"></script>
+  </body>
+</html>
